@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "ream dev ./src",
-    "build": "ream build",
-    "start": "ream start",
+    "build": "ream build ./src",
+    "start": "ream start ./src",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
