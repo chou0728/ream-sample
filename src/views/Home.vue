@@ -6,24 +6,10 @@
 </template>
 
 <script>
-
-export default {
-  name: 'home',
-  head: {
-    title: 'Home'
-  }
-}
-</script>
-
-
-<script>
   import { mapState } from 'vuex'
 
   export default {
     name: 'home',
-    head: {
-      title: 'Home'
-    },
     getInitialData({ store, route }) {
       return store.dispatch('fetchArticleList')
     },
@@ -31,12 +17,11 @@ export default {
       ...mapState(['articleList'])
     },
     created() {
-      if(process.brower) {
+      if (process.browser) {
         console.log(window)
       }
     },
     mounted() {
-      console.log(window)
     }
   }
 </script>
