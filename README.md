@@ -10,9 +10,10 @@ npm install
 npm run dev
 ```
 
-### Compiles and minifies for production
+### Compiles and minifies for production and launch server 
 ```
 npm run build
+npm run start
 ```
 
 ### Lints and fixes files
